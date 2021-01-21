@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| Lamont Black |</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Header with type of nav bar -->
+    
+    <!-- My name with green background -->
+    <header>
+        <div id="header-wrapper">
+            <div  id="your-name">
+                <h1>Lamont Black</h1>
+            </div>
+            <!-- Menu items -->
+            <ul id="menu-list">
+                <li class="nav-item"><a href="#">About</a></li>
+                <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </header>    
+    
+    <br>
+    <div id="main-content">
+        <h2 id="div-title">Contact</h2>
+       <!-- Labels and Inputs -->
+
+       <label for="name-input">Name</label><br>
+       <input type="text" id="name-input" placeholder="John Smith"><br>
+
+       <label for="email-input">Email</label><br>
+       <input type="email" id="email-input" placeholder="example@gmail.com"><br>
+
+       <label for="message">Message</label><br>
+       <textarea id="message" id="message" rows="10"></textarea><br>
+
+       <input type="submit" value="Submit" id="submit-button" onclick="NotYet()">
+     
+       <!-- Let user know this is not active yet -->
+       <script>
+        function NotYet() {
+          window.alert("Sorry, not quite active yet!");
+        }
+        </script>
+    </div>
+
+    <footer>
+        copyright &#169;
+    </footer>
+    
+</body>
+</html>

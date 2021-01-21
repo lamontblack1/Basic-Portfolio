@@ -1,23 +1,26 @@
 
-/* Set characteristics of ul and each list item to set up for nav links */
+/* Global attribute settings */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 20px 0 20px 20px;
-    overflow: hidden;
-    /* background-color: #f3f3f3; */
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0 20px 20px;
+  overflow: hidden;
+  /* background-color: #f3f3f3; */
   }
   
-   li a {
+  li a {
     display: block;
     color:#777777;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
-
+  li a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
   /* float the nav items to the right  */
- .nav-item {
+  .nav-item {
     float: right;
  }
 
@@ -32,6 +35,10 @@ ul {
 
   }
 
+  h2, h3 {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      color: #4aaaa5;
+    }
   #header-wrapper {
     width: 960px;
     background-color: #ffffff;
@@ -42,13 +49,8 @@ ul {
     background-origin: border-box;
   }
 
- 
-  h2, h3 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: #4aaaa5;
-}
 
-#about-me {
+#div-title {
     font-size: x-large;
     height: 50px;
     border-bottom: 4px solid  #dddddd;
@@ -66,9 +68,6 @@ ul {
     border-right: 1px solid #dddddd;
 }
   
-  li a:hover:not(.active) {
-    background-color: #ddd;
-  }
 
 body {
     /* display: block; */
@@ -96,17 +95,57 @@ body {
 }
 
 
+/* Define common attributes for index.html and Contacts.html */
 
-ul, p {
+ul, p, label, input {
     font-family: Arial, Helvetica, sans-serif;
     color: #777777;
     font-size: large;
 }
 
-p {
+p, label {
     line-height: 29px;
 }
 
+/* Define attributes specifically for Contacts.html */
+    input, textarea {
+      width: 100%;
+      margin: 5px 0 20px 0;
+      resize: none;
+      border-color: #dddddd;
+      border-style: solid;
+    }
+
+    #submit-button {
+      background-color: #4aaaa5;
+      color: white;
+      width: 100px;
+      height: 40px;
+      border-style: none;
+      /* border-color: #dddddd; */
+    }
+
+    /* attributes for portfolio */
+    .img-and-label {
+      width: 200px;
+    }
+
+    .portfolio-pic {
+      z-index: 0;
+      width: 100px;
+    }
+    
+    .image-label {
+      width: 100%;
+      height: 40px;
+      background-color:  #4aaaa5;
+      z-index: 1;
+      position: relative;
+      top: -20px;
+    }
+
+
+/* Just the footer  */
 footer {
     box-sizing: border-box;
     background-color: #666666;
