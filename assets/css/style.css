@@ -126,22 +126,33 @@ p, label {
     }
 
     /* attributes for portfolio */
+    /* image and label wrapper div  */
     .img-and-label {
-      width: 200px;
+      width: 275px;
+      margin-right: 50px;
+      margin-left: 20px;
+      /* float: left; */
+      display: inline-block;
     }
 
     .portfolio-pic {
       z-index: 0;
-      width: 100px;
+      width: 100%;
+      height: 275px;
     }
     
     .image-label {
       width: 100%;
-      height: 40px;
+      height: 50px;
       background-color:  #4aaaa5;
       z-index: 1;
       position: relative;
-      top: -20px;
+      top: -70px;
+      text-align: center;
+      color: white;
+      font-size: 25px;
+      box-sizing: border-box;
+      padding: 6px;
     }
 
 
@@ -157,4 +168,5 @@ footer {
     bottom: 0;
     border-top: 7px solid  #4aaaa5;
     color: silver;
+    z-index: 10;
 }
