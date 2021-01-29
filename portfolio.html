@@ -1,74 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>| Lamont Black |</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <!-- Header with type of nav bar -->
-    
-    <!-- My name with green background -->
-    <header>
-        <div id="header-wrapper">
-            <div  id="your-name">
-                <h1>Lamont Black</h1>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <style>
+       ul, p, label, input {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #777777;
+        font-size: large;
+      }
+
+      
+       #MyName {
+            background-color: #4aaaa5;
+        }
+        h2, h3 {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h3 {
+          color: #4aaaa5;
+        }
+        li a {
+          color:#777777;
+        }
+        ul {
+          font-size: large;
+          font-weight: 600;
+        }
+        #line {
+          background-color: #dddddd;
+        }
+        #profile-pic {
+          width: 17%;
+          /* margin-right: 10px;
+          margin-top: 6px; */
+          float: left;
+          /* display: inline-block; */ */
+        }
+
+        footer {
+          box-sizing: border-box;
+          background-color: #666666;
+          padding: 1%;
+          width: 100%;
+          height: 8%;
+          text-align: center;
+          position: fixed;
+          bottom: 0;
+          border-top: 6px solid  #4aaaa5;
+          color: silver;
+          z-index: 10;
+        }
+
+                /* #Main-Content {
+          background-color: white;
+          border-style: solid;
+          border-color:  #dddddd;
+          border-width: 4px;
+        } */
+      
+    </style>
+    <title>Portfolio</title>
+  </head>
+
+  <body background="./assets/images/background.png">
+    <!-- this is to stretch top all the way across with white background  -->
+    <div class="container-fluid bg-white">
+      <div class="container">
+          <!-- Title and Nav bar Row -->
+          <div class="row align-items-center">
+            <div id="MyName" class="col-3 pt-4 pb-4 text-white text-center">
+                <h2><b>Lamont Black</b></h2>
             </div>
-            <!-- Menu items -->
-            <ul id="menu-list">
-                <li class="nav-item"><a href="index.html">About</a></li>
-                <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-                <li class="nav-item"><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="col-5">
+
+            </div>
+            <!-- This column is Navbar column, right justified -->
+            <div class="col-4">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  <!-- make a line across page below Title and Nav, only way I could figure to do it since border width wouldnt work  -->
+   <div id="line" class="container-fluid pt-1"></div>
+
+  <!-- Main Content div  -->
+    <div id="Main-Content" class="container bg-white mt-4 mb-5 pb-3">
+        <div class="row p-4">
+            <div class="col-12">
+                <!-- <div class="row mb-3"> -->
+                <h3><b>Portfolio</b></h3>
+                    <div id="line" class="container-fluid pt-1 mt-3"></div>
+                <!-- </div> -->
+            </div>      
         </div>
-    </header>    
-    
-    <br>
-    <div id="main-content">
-        <h2 id="div-title">Portfolio</h2>
-        <!-- Image and label wrappers  -->
-        <div class="img-and-label">
-        <img class="portfolio-pic" src="./assets/images/GirlSmartphone.jpg" alt="My Profile Pic">
-            <div class="image-label">
-                Display Palettes
+
+        <div class="row px-4 mb-4">
+            <div class="col-md-4">
+                <img src="./assets/images/GirlSmartphone.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/GirlSmartphone.jpg" class="img-fluid" alt="Responsive image">
             </div>
         </div>
 
-        <div class="img-and-label">
-            <img class="portfolio-pic" src="./assets/images/Database.jpg" alt="My Profile Pic">
-            <div class="image-label">
-                Recipe Database
+        <div class="row px-4 mb-4">
+            <div class="col-md-4">
+                <img src="./assets/images/GirlSmartphone.jpg" class="img-fluid" alt="Responsive image">
+            </div>
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-4">
+                <img src="./assets/images/GirlSmartphone.jpg" class="img-fluid" alt="Responsive image">
             </div>
         </div>
 
-        <div class="img-and-label">
-            <img class="portfolio-pic" src="./assets/images/Math.jpg" alt="My Profile Pic">
-                <div class="image-label">
-                    Calculus Tutorial
-                </div>
+       
         </div>
-
-        <div class="img-and-label">
-            <img class="portfolio-pic" src="./assets/images/Code.jpg" alt="My Profile Pic">
-                <div class="image-label">
-                    Code Samples
-                </div>
-        </div>
-
-        <div class="img-and-label">
-            <img class="portfolio-pic" src="./assets/images/WorkingTogether.jpg" alt="My Profile Pic">
-                <div class="image-label">
-                    Github Projects
-                </div>
-        </div>
-
 
     </div>
 
-    <footer>
-        copyright &#169;
-    </footer>
-    
-</body>
+  <footer>
+    copyright &#169;
+  </footer>
+
+  </body>
 </html>
