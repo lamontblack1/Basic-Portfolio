@@ -1,56 +1,145 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>| Lamont Black |</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-    <!-- Header with type of nav bar -->
-    
-    <!-- My name with green background -->
-    <header>
-        <div id="header-wrapper">
-            <div  id="your-name">
-                <h1>Lamont Black</h1>
-            </div>
-            <!-- Menu items -->
-            <ul id="menu-list">
-                <li class="nav-item"><a href="index.html">About</a></li>
-                <li class="nav-item"><a href="portfolio.html">Portfolio</a></li>
-                <li class="nav-item"><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </header>    
-    
-    <br>
-    <div id="main-content">
-        <h2 id="div-title">Contact</h2>
-       <!-- Labels and Inputs -->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-       <label for="name-input">Name</label><br>
-       <input type="text" id="name-input" placeholder="John Smith"><br>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-       <label for="email-input">Email</label><br>
-       <input type="email" id="email-input" placeholder="example@gmail.com"><br>
+    <style>
+       ul, p, label, input, button {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #777777;
+        font-size: large;
+      }
 
-       <label for="message">Message</label><br>
-       <textarea id="message" id="message" rows="10"></textarea><br>
-
-       <input type="submit" value="Submit" id="submit-button" onclick="NotYet()">
-     
-       <!-- Let user know this is not active yet -->
-       <script>
-        function NotYet() {
-          window.alert("Sorry, not quite active yet!");
+      
+       #MyName {
+            background-color: #4aaaa5;
         }
-        </script>
+        h2, h3 {
+          font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        h3 {
+          color: #4aaaa5;
+        }
+        li a {
+          color:#777777;
+        }
+        ul {
+          font-size: large;
+          font-weight: 600;
+        }
+        #line {
+          background-color: #dddddd;
+        }
+        #profile-pic {
+          width: 17%;
+          /* margin-right: 10px;
+          margin-top: 6px; */
+          float: left;
+          /* display: inline-block; */ */
+        }
+
+        #submitButton {
+            background-color: #4aaaa5;
+            color: white;
+        }
+
+        footer {
+          box-sizing: border-box;
+          background-color: #666666;
+          padding: 1%;
+          width: 100%;
+          height: 8%;
+          text-align: center;
+          position: fixed;
+          bottom: 0;
+          border-top: 6px solid  #4aaaa5;
+          color: silver;
+          z-index: 10;
+        }
+
+                /* #Main-Content {
+          background-color: white;
+          border-style: solid;
+          border-color:  #dddddd;
+          border-width: 4px;
+        } */
+      
+    </style>
+    <title>Contact</title>
+  </head>
+
+  <body background="./assets/images/background.png">
+    <!-- this is to stretch top all the way across with white background  -->
+    <div class="container-fluid bg-white">
+      <div class="container">
+          <!-- Title and Nav bar Row -->
+          <div class="row align-items-center">
+            <div id="MyName" class="col-3 pt-4 pb-4 text-white text-center">
+                <h2><b>Lamont Black</b></h2>
+            </div>
+            <div class="col-5">
+
+            </div>
+            <!-- This column is Navbar column, right justified -->
+            <div class="col-4">
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">About</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </div>
     </div>
 
-    <footer>
-        copyright &#169;
-    </footer>
-    
-</body>
+  <!-- make a line across page below Title and Nav, only way I could figure to do it since border width wouldnt work  -->
+   <div id="line" class="container-fluid pt-1"></div>
+
+  <!-- Main Content div  -->
+  <div id="Main-Content" class="container bg-white mt-4 mb-5">
+    <div class="row p-4">
+      <div class="col-12">
+        <!-- <div class="row mb-3"> -->
+          <h3><b>Contact</b></h3>
+               <div id="line" class="container-fluid pt-1 my-3">
+               </div>
+               
+               <!-- Form Control and form  -->
+                <!-- Name label and input  -->
+               <div class="mb-3">
+                <label for="nameInput" class="form-label">Email address</label>
+                <input type="text" class="form-control" id="nameInput" placeholder="John Smith">
+              </div>
+              <!-- email input  -->
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+              </div>
+              <!-- Message input  -->
+              <div class="mb-3">
+                <label for="messageInput" class="form-label">Message</label>
+                <textarea class="form-control" id="messageInput" rows="5"></textarea>
+              </div>
+              <button type="submit" id="submitButton" class="btn btn-large py-2 px-4 mb-3">Submit</button>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    copyright &#169;
+  </footer>
+
+  </body>
 </html>
