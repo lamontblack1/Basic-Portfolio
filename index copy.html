@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
     <style>
-       ul, p, label, input, button {
+       ul, p, label, input {
         font-family: Arial, Helvetica, sans-serif;
         color: #777777;
         font-size: large;
@@ -43,11 +43,6 @@
           /* display: inline-block; */ */
         }
 
-        #submitButton {
-            background-color: #4aaaa5;
-            color: white;
-        }
-
         footer {
           box-sizing: border-box;
           background-color: #666666;
@@ -70,12 +65,13 @@
         } */
       
     </style>
-    <title>Contact</title>
+    <title>Lamont | Black</title>
   </head>
 
   <body background="./assets/images/background.png">
     <!-- this is to stretch top all the way across with white background  -->
     <div class="container-fluid bg-white">
+      <!-- This is for responsive width  -->
       <div class="container">
           <!-- Title and Nav bar Row -->
           <div class="row align-items-center">
@@ -111,27 +107,25 @@
     <div class="row p-4">
       <div class="col-12">
         <!-- <div class="row mb-3"> -->
-          <h3><b>Contact</b></h3>
-               <div id="line" class="container-fluid pt-1 my-3">
-               </div>
-               
-               <!-- Form Control and form  -->
-                <!-- Name label and input  -->
-               <div class="mb-3">
-                <label for="nameInput" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="nameInput" placeholder="John Smith">
-              </div>
-              <!-- email input  -->
-              <div class="mb-3">
-                <label for="emailInput" class="form-label">Email</label>
-                <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-              </div>
-              <!-- Message input  -->
-              <div class="mb-3">
-                <label for="messageInput" class="form-label">Message</label>
-                <textarea class="form-control" id="messageInput" rows="5"></textarea>
-              </div>
-              <button type="submit" id="submitButton" class="btn btn-large py-2 px-4 mb-3">Submit</button>
+          <h3><b>About Me</b></h3>
+               <div id="line" class="container-fluid pt-1 my-3"></div>
+        <!-- </div> -->
+       
+        <!-- The only way I could figure to wrap the text was put it all in the same column -->
+        <!-- <div class="col"> -->
+          <!-- <div class="row mt-4"> -->
+            <!-- <div class="col-md-3"> -->
+              <img id="profile-pic" class="img-fluid mr-2" src="./assets/images/ProfilePic.JPG" alt="My Profile Pic">
+            <!-- </div>  -->
+            <!-- <div class="col-md-9"> -->
+            <!-- </div> -->
+                
+              <!-- Some information about me -->
+              <p class="lh-base">I'm a flip-flop-wearing Sarasotan who tries to step foot on the beach no less than 5 times a week. Sunrise and Sunset are the best times to do so - but remember to always look 360 degrees around you, not just at the immediate center of attention.</p>
+              <p class="lh-base">My background is mathematics and physics. I am fascinated with the perfect settings, known as constants, that make the universe  and living things tick with precise balance. I have worked in such varied environments as carpentry and surgical technology. However, the pursuit which has taken up the bulk of my time for the past 9 years is learning the Mandarin language and volunteering to help Mandarin-speaking people understand, not how, but just why the universe does tick with such precision</p>
+              <p class="lh-base">Despite the fact that I am not a daisy-chain thinker, I have used basic programming languages at a novice level since I had a Commodore 64. In 2021 I jumped into the world of web development. Perhaps my varied background may give me an edge on your project.  Give me a shot!</p>
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
     </div>
 
@@ -141,5 +135,7 @@
     copyright &#169;
   </footer>
 
+ 
+    
   </body>
 </html>
