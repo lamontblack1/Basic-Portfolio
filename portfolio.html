@@ -12,7 +12,7 @@
        ul, p, label, input {
         font-family: Arial, Helvetica, sans-serif;
         color: #777777;
-        font-size: large;
+        /* font-size: large; */
       }
 
       
@@ -22,8 +22,18 @@
         h2, h3 {
           font-family: Georgia, 'Times New Roman', Times, serif;
         }
+
+        h2 {
+          font-size: calc(12px + (28 - 10) * (100vw - 320px) / (1200 - 400));
+        }
+
         h3 {
           color: #4aaaa5;
+        }
+
+        h5 {
+          font-size: calc(12px + (14 - 10) * (100vw - 320px) / (1200 - 768));
+          margin-bottom: 0;
         }
         li a {
           color:#777777;
@@ -48,12 +58,17 @@
           background-color:  #4aaaa5;
           z-index: 1;
           position: relative;
-          bottom: 70px;
+          bottom: 50px;
           text-align: center;
           color: white;
           /* padding: 4%; */
           font-family: Arial, Helvetica, sans-serif;
           /* font-size:large; */
+      }
+
+      .image-desc {
+        position: relative;
+          top: -30px;
       }
 
         footer {
@@ -132,18 +147,20 @@
                 <a href="https://lamontblack1.github.io/FindFriends/" target="_blank">
                   <img src="./assets/images/GirlSmartphone.jpg" class="figure-img img-fluid rounded" alt="Friend Finder">
                 </a>
-                <figcaption class="image-label figure-caption text-align-center pt-3 pb-2"><h5>Friend Finder (Express)</h5></figcaption>
+                <figcaption class="image-label figure-caption text-align-center pt-1 pb-1"><h5>Friend Finder</h5></figcaption>
+                <p class="text-center image-desc">A deployed Express App</p>
               </figure>
             </div>
             <div class="col-md-1">
 
-            </div>
+            </div>  
             <div class="col-md-4">
               <figure class="figure">
                 <a href="https://lamontblack1.github.io/firebaseChildAddedActivity/" target="_blank">
                   <img src="./assets/images/Database.jpg" class="figure-img img-fluid rounded" alt="Firebase child_added Activity">
                 </a>
-                <figcaption class="image-label figure-caption text-align-center pt-3 pb-2"><h5>Firebase child_added Activity</h5></figcaption>
+                <figcaption class="image-label figure-caption text-align-center pt-1 pb-1"><h5>Employee Data Manager</h5></figcaption>
+                <p class="text-center image-desc">A Firebase Database App</p>
               </figure>
             </div>
         </div>
@@ -155,7 +172,8 @@
               <a href="https://lamontblack1.github.io/homeworkNodeMysqlBurgerApp/" target="_blank">
                 <img src="./assets/images/burger.jpg" class="figure-img img-fluid rounded" alt="Eat-Da-Burger!">
               </a>
-              <figcaption class="image-label figure-caption text-align-center pt-3 pb-2"><h5>Eat-Da-Burger!</h5></figcaption>
+              <figcaption class="image-label figure-caption text-align-center pt-1 pb-1"><h5>Eat-Da-Burger!</h5></figcaption>
+              <p class="text-center image-desc">An Express Sequelize App</p>
             </figure>
           </div>
           <div class="col-md-1">
@@ -166,7 +184,8 @@
               <a href="https://github.com/lamontblack1/word-guess-cli" target="_blank">
               <img src="./assets/images/Code.jpg" class="figure-img img-fluid rounded" alt="Code Samples">
             </a>
-              <figcaption class="image-label figure-caption text-align-center pt-3 pb-2"><h5>Node Module Sample</h5></figcaption>
+              <figcaption class="image-label figure-caption text-align-center pt-1 pb-1"><h5>Word Guess CLI</h5></figcaption>
+              <p class="text-center image-desc">A Node CLI App</p>
             </figure>
           </div>
       </div>
@@ -178,18 +197,26 @@
               <a href="https://github.com/lamontblack1" target="_blank">
                 <img src="./assets/images/WorkingTogether.jpg" class="figure-img img-fluid rounded" alt="My Github Projects">
               </a>
-              <figcaption class="image-label figure-caption text-align-center pt-3 pb-2"><h5>Github Repos</h5></figcaption>
+              <figcaption class="image-label figure-caption text-align-center pt-1 pb-1"><h5>Github Repos</h5></figcaption>
+              <p class="text-center image-desc">Explore My Repos</p>
             </figure>
           </div>
           <div class="col-md-1">
 
           </div>
+         
           <div class="col-md-4">
-            <!-- <figure class="figure">
-              <img src="./assets/images/GirlSmartphone.jpg" class="figure-img img-fluid rounded" alt="Display Palettes">
-              <figcaption class="image-label figure-caption text-align-center pt-3 pb-2"><h5>Display Palettes</h5></figcaption>
-            </figure> -->
+            <figure class="figure">
+              <a href="https://github.com/lamontblack1/flcce" target="_blank">
+                <img src="./assets/images/condo.jpg" class="figure-img img-fluid rounded" alt="Condo Manager">
+              </a>
+              <figcaption class="image-label figure-caption text-align-center pt-1 pb-1">
+                <h5>Forest Lakes Condo</h5>
+              </figcaption>
+              <p class="text-center image-desc">A Live Website For My<br>Condo Association <a href="flccesrq.com">(flccesrq.com)</a></p>
+            </figure>
           </div>
+
       </div>
       
     </div>
